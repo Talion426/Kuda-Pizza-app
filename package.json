@@ -1,21 +1,22 @@
 {
-  "name": "parcel-project-template",
+  "name": "Kuda-Pizza-app",
   "version": "0.0.2",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://Talion426.github.io/Kuda-Pizza-app",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /Kuda-Pizza-app/",
+    "build:locally": "parcel build src/*.html --no-source-maps"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/Talion426/Kuda-Pizza-app.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Egor Barsukov <egor.barsukov.2022@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/Talion426/Kuda-Pizza-app/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
