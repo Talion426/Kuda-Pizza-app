@@ -1,2 +1,19 @@
 @import './common';
-@import './example';
+@import './fonts';
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'SF Pro Text';
+  background: #ffffff;
+}
+.main {
+  flex: 1 0 auto;
+}
+.container {
+  max-width: 1290px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
