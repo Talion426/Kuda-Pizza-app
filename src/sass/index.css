@@ -228,10 +228,6 @@ body {
   margin: 0 auto;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 ul, ol {
   list-style: none;
   padding: 0;
