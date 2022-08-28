@@ -1,0 +1,251 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Thin.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-ThinItalic.otf);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Ultralight.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-UltralightItalic.otf);
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-LightItalic.otf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-RegularItalic.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-MediumItalic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Semibold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-SemiboldItalic.otf);
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-BoldItalic.otf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Heavy.otf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-HeavyItalic.otf);
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-BlackItalic.otf);
+  font-weight: 900;
+  font-style: italic;
+}
+.filters {
+  height: 100vh;
+  background: rgba(25, 25, 25, 0.4);
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
+}
+.filters__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #fff;
+  max-height: 100vh;
+  max-width: 420px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  transform: translateX(100%);
+  padding: 32px 20px 0;
+}
+.filters__title {
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #191919;
+}
+.filters__subtitle {
+  margin-bottom: 5px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  align-items: center;
+  color: #A5A5A5;
+}
+.filters__block-ingr {
+  margin-bottom: 15px;
+  display: flex;
+  flex-flow: wrap;
+  max-width: 440px;
+  width: 100%;
+}
+.filters__block-ingr-btn {
+  font-size: 14px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+  margin: 8px 8px 0 0;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.filters__block-ingr-btn:hover {
+  transform: scale(0.95);
+}
+.filters__block-ingr-btn:active {
+  background: #ef2b51;
+  border: 1px solid #ef2b51;
+  color: #fff;
+}
+.filters__btns-group {
+  margin-top: auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+}
+.filters__btn {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 48px;
+  background: #ef2b51;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  border: 1px solid #ef2b51;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+.filters__btn:hover {
+  background: #fff;
+  border: 1px solid #ef2b51;
+  color: #ef2b51;
+}
+.filters__btn--orange {
+  background: #fff;
+  border: 1px solid #ef2b51;
+  color: #ef2b51;
+  margin-right: 20px;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: "SF Pro Text";
+  background: #f9f9f9;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1290px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=index.css.map */
