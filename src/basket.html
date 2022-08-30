@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/basket.css">
+    <title>Busket</title>
+</head>
+<body>
+    <div class="container">
+        <div class="basket-order">
+            <h2 class="basket-order__title">Ваш заказ</h2>
+            <ul class="basket-order__list">
+                <li class="basket-order__item">
+                    <img class="basket-order__item-img" src="./images/pizzas/pizza6.png" alt="">
+                    <div class="basket-order__item-text">
+                        <h3 class="basket-order__item-title">Пепперони по-деревенски</h3>
+                        <p class="basket-order__item-descr">Традиционное тесто, 23 см</p>
+                    </div>
+                        <div class="basket-order__item-amount">
+                            <button class="basket-order__item-btn">-</button>
+                            <p class="basket-order__item-btn-text">1</p>
+                            <button class="basket-order__item-btn">+</button>
+                        </div>
+                        <p class="basket-order__item-price">399 ₽</p>
+                </li>
+            </ul>
+            <div class="basket-order__total">
+                <form class="basket-order__total-item">
+                    <input class="basket-order__total-input" type="text" placeholder="Промокод">
+                    <button class="basket-order__total-btn">
+                        <svg  width="18" height="16" viewbox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6875 6.46641L2.60474 0.709923C2.01145 0.467386 1.34119 0.574079 0.855567 0.988227C0.369941 1.40244 0.166828 2.04066 0.325555 2.65378L1.57905 7.49621H7.7163C7.99871 7.49621 8.2277 7.72175 8.2277 7.99999C8.2277 8.27819 7.99874 8.50377 7.7163 8.50377H1.57905L0.325555 13.3462C0.166828 13.9593 0.369907 14.5975 0.855567 15.0117C1.34218 15.4267 2.01251 15.5321 2.60477 15.29L16.6875 9.53356C17.3287 9.27148 17.727 8.68384 17.727 7.99999C17.727 7.31613 17.3287 6.72846 16.6875 6.46641Z" fill="white"/>
+                        </svg>
+                    </button>
+                </form>
+                <div class="basket-order__total-text">
+                    <p class="basket-order__total-total">Итого:</p>
+                    <p class="basket-order__total-price">2379 ₽</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="basket__add--container">
+        <h2 class="basket__add-title">Добавить к заказу?</h2>
+        <div class="basket__add-slider-list">
+            <button class="basket__add-btn-prew">
+                <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.37355 15.2728C7.20564 15.2728 7.03756 15.2081 6.90937 15.079L0.34378 8.46748C0.0872296 8.20913 0.0872296 7.79079 0.34378 7.53261L6.90937 0.921055C7.16592 0.662708 7.58135 0.662708 7.83774 0.921055C8.09413 1.1794 8.09429 1.59775 7.83774 1.85593L1.73634 8.00004L7.83774 14.1442C8.09429 14.4025 8.09429 14.8209 7.83774 15.079C7.70955 15.2081 7.54147 15.2728 7.37355 15.2728Z" fill="white"/>
+                </svg>
+            </button>
+            <div class="basket__add-slider">
+                <div class="basket__add-slider-track">
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/potatoFree.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Картофель из печи</h3>
+                        <p class="basket__add-slider-item-descr">Порция 95г</p>
+                        <button class="basket__add-slider-item-btn">179 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/fila.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Филадельфия крем-брюле</h3>
+                        <p class="basket__add-slider-item-descr">Порция 95г</p>
+                        <button class="basket__add-slider-item-btn">179 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/superFila.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Супер Филадельфия</h3>
+                        <p class="basket__add-slider-item-descr">Порция 95г</p>
+                        <button class="basket__add-slider-item-btn">179 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/TigerMama.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Тигр мама</h3>
+                        <p class="basket__add-slider-item-descr">Порция 95г</p>
+                        <button class="basket__add-slider-item-btn">179 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/potatoFree.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Картофель из печи</h3>
+                        <p class="basket__add-slider-item-descr">Порция 95г</p>
+                        <button class="basket__add-slider-item-btn">179 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/potatoFree.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Картофель из печи</h3>
+                        <p class="basket__add-slider-item-descr">Порция 95г</p>
+                        <button class="basket__add-slider-item-btn">179 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/potatoFree.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Картофель из печи</h3>
+                        <p class="basket__add-slider-item-descr">Порция 95г</p>
+                        <button class="basket__add-slider-item-btn">179 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/potatoFree.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Картофель из печи</h3>
+                        <p class="basket__add-slider-item-descr">Порция 95г</p>
+                        <button class="basket__add-slider-item-btn">179 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/potatoFree.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Картофель из печи</h3>
+                        <p class="basket__add-slider-item-descr">Порция 95г</p>
+                        <button class="basket__add-slider-item-btn">179 ₽</button>
+                    </div>
+                </div>
+            </div>
+            <button class="basket__add-btn-next">
+                <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.62645 15.2728C1.79436 15.2728 1.96244 15.2081 2.09063 15.079L8.65622 8.46748C8.91277 8.20913 8.91277 7.79079 8.65622 7.53261L2.09063 0.921055C1.83408 0.662708 1.41865 0.662708 1.16226 0.921055C0.905873 1.1794 0.905709 1.59775 1.16226 1.85593L7.26366 8.00004L1.16226 14.1442C0.905709 14.4025 0.905709 14.8209 1.16226 15.079C1.29045 15.2081 1.45853 15.2728 1.62645 15.2728Z" fill="white"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <div class="basket__add--container">
+        <h2 class="basket__add-title">Соусы</h2>
+        <div class="basket__add-slider-list">
+            <button class="basket__add-btn-prew">
+                <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.37355 15.2728C7.20564 15.2728 7.03756 15.2081 6.90937 15.079L0.34378 8.46748C0.0872296 8.20913 0.0872296 7.79079 0.34378 7.53261L6.90937 0.921055C7.16592 0.662708 7.58135 0.662708 7.83774 0.921055C8.09413 1.1794 8.09429 1.59775 7.83774 1.85593L1.73634 8.00004L7.83774 14.1442C8.09429 14.4025 8.09429 14.8209 7.83774 15.079C7.70955 15.2081 7.54147 15.2728 7.37355 15.2728Z" fill="white"/>
+                </svg>
+            </button>
+            <div class="basket__add-slider">
+                <div class="basket__add-slider-track">
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/OrderSouce/cheese.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Сырный</h3>
+                        <button class="basket__add-slider-item-btn">39 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/OrderSouce/BBQ.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Барбекю</h3>
+                        <button class="basket__add-slider-item-btn">39 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/OrderSouce/Rang.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Ранч</h3>
+                        <button class="basket__add-slider-item-btn">39 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/OrderSouce/sgusch.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Сгущенка</h3>
+                        <button class="basket__add-slider-item-btn">39 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/OrderSouce/cheese.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Сырный</h3>
+                        <button class="basket__add-slider-item-btn">39 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/OrderSouce/cheese.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Сырный</h3>
+                        <button class="basket__add-slider-item-btn">39 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/OrderSouce/cheese.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Сырный</h3>
+                        <button class="basket__add-slider-item-btn">39 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/OrderSouce/cheese.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Сырный</h3>
+                        <button class="basket__add-slider-item-btn">39 ₽</button>
+                    </div>
+                    <div class="basket__add-slider-item">
+                        <img class="basket__add-slider-item-img" src="./images/addToOrder/OrderSouce/cheese.png" alt="">
+                        <h3 class="basket__add-slider-item-title">Сырный</h3>
+                        <button class="basket__add-slider-item-btn">39 ₽</button>
+                    </div>
+                </div>
+            </div>
+            <button class="basket__add-btn-next">
+                <svg width="9" height="16" viewbox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.62645 15.2728C1.79436 15.2728 1.96244 15.2081 2.09063 15.079L8.65622 8.46748C8.91277 8.20913 8.91277 7.79079 8.65622 7.53261L2.09063 0.921055C1.83408 0.662708 1.41865 0.662708 1.16226 0.921055C0.905873 1.1794 0.905709 1.59775 1.16226 1.85593L7.26366 8.00004L1.16226 14.1442C0.905709 14.4025 0.905709 14.8209 1.16226 15.079C1.29045 15.2081 1.45853 15.2728 1.62645 15.2728Z" fill="white"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="basket__inputs--container">
+        <form>
+            <div class="basket__inputs-about-you">
+                <h2 class="basket__inputs-about-you-title">О Вас</h2>
+                <div class="basket__inputs-about-you-list">
+                    <div class="basket__inputs-about-you-item">
+                        <label class="basket__inputs-about-you-label" for="firstname">Имя*</label>
+                        <input class="basket__inputs-about-you-input" type="text" >
+                    </div>
+                    <div class="basket__inputs-about-you-item">
+                        <label class="basket__inputs-about-you-label" for="number">Номер телефона*</label>
+                        <input class="basket__inputs-about-you-input" type="tel">
+                    </div>
+                    <div class="basket__inputs-about-you-item">
+                        <label class="basket__inputs-about-you-label" for="email">Почта</label>
+                        <input class="basket__inputs-about-you-input" type="email">
+                    </div>
+                </div>
+            </div>
+
+            <div class="basket__inputs-delivery">
+                <div class="basket__inputs-delivery-name">
+                    <p class="basket__inputs-delivery-title">Доставка</p>
+                    <div class="basket__inputs-delivery-title-btns">
+                        <button class="basket__inputs-delivery-title-btn">Доставка</button>
+                        <button class="basket__inputs-delivery-title-btn">Самовывоз</button>
+                    </div>
+                </div>
+                <div class="basket__inputs-delivery-rest">
+                    <label class="basket__inputs-delivery-rest-label" for="rest">Ресторан*</label>
+                    <input class="basket__inputs-delivery-rest-input" type="text" placeholder="Выберите ресторан">
+                </div>
+                <div class="basket__inputs-when">
+                        <h3 class="basket__inputs-when-title">Когда выполнить заказ?</h3>
+                        <div class="basket__inputs-when-inputs">
+                            <div class="basket__inputs-when-radio">
+                                <input class="basket__inputs-when-radio-input" type="radio">
+                                <label class="basket__inputs-when-radio-label">Как можно скорее</label>
+                            </div>
+                            <div class="basket__inputs-when-radio">
+                                <input class="basket__inputs-when-radio-input" type="radio">
+                                <label class="basket__inputs-when-radio-label">По времени</label>
+                            </div>
+                            <input class="basket__inputs-when-date" type="date" placeholder="Дата">
+                            <input class="basket__inputs-when-time" type="time" placeholder="Время">
+                        </div>
+                </div>
+            </div>
+
+            <div class="basket__inputs-pay">
+                <h2 class="basket__inputs-pay-title">Оплата</h2>
+                <div class="basket__inputs-pay-inputs">
+                    <div class="basket__inputs-pay-input">
+                        <input class="basket__inputs-pay-radio" type="radio">
+                        <label class="basket__inputs-pay-label">Наличными</label>
+                    </div>
+                    <div class="basket__inputs-pay-input">
+                        <input class="basket__inputs-pay-radio" type="radio">
+                        <label class="basket__inputs-pay-label">Картой</label>
+                    </div>
+                    <div class="basket__inputs-pay-input">
+                        <input class="basket__inputs-pay-radio" type="radio">
+                        <label class="basket__inputs-pay-label">Apple Pay</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basket__inputs-pay">
+                <h2 class="basket__inputs-pay-title">Сдача</h2>
+                <div class="basket__inputs-pay-inputs">
+                    <div class="basket__inputs-pay-input">
+                        <input class="basket__inputs-pay-radio" type="radio">
+                        <label class="basket__inputs-pay-label">Без сдачи</label>
+                    </div>
+                    <div class="basket__inputs-pay-input">
+                        <input class="basket__inputs-pay-radio" type="radio">
+                        <label class="basket__inputs-pay-label">Сдача с</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="basket__inputs-comm">
+                <h2 class="basket__inputs-comm-title">Коментарий</h2>
+                <input class="basket__inputs-comm-input" type="text" placeholder="Есть уточнения?">
+            </div>
+
+            <div class="basket__inputs-total">
+                <div class="basket__inputs-total-title">
+                    <p class="basket__inputs-total-name">Итого:</p>
+                    <p class="basket__inputs-total-name">2 379 ₽</p>
+                </div>
+                <button class="basket__inputs-total-btn">Оформить заказ</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./jquery.js"></script>
+    <script src="./basket.js"></script>
+</body>
+</html>
