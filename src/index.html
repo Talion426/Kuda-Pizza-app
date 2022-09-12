@@ -13,74 +13,202 @@
       <footer class="footer"></footer>
     </div>
     
-      <div class="filters">
-        <h3 class="filters__title">Фильтры</h3>
-        <div class="filters__main-block--wrapper">
-          <div class="filters__block--wrapper">
-            <p class="filters__subtitle">Сыр</p>
-
-            <div class="filters__block-ingr">
-              <input type="checkbox" name="pizza-btn" id="pizza-btn-1" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-1">Сыр пармезан</label></input>
-              <input type="checkbox" name="pizza-btn" id="pizza-btn-2" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-2">Сыр чеддер</label> </input>
-              <input type="checkbox" name="pizza-btn" id="pizza-btn-3" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-3">Сыр гарганзола</label> </input>
-            </div>
-          </div>
-          <div class="filters__block--wrapper">
-              <p class="filters__subtitle">Мясо</p>
-              <div class="filters__block-ingr">
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-4" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-4">Пепперони</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-5" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-5">Ветчина</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-6" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-6">Цыплёнок</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-7" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-7">Мидии</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-8" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-8">Бекон</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-9" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-9">Чоризо</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-10" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-10">Лосось</label></input>
+    <div class="filter-popup pizza-filter-popup">
+      <button class="filter-popup__off-btn close-btn">
+          <svg class="filter-popup__off-svg">
+              <use xlink:href="#off-svg"></use>
+          </svg>
+      </button>
+      <h3 class="filter-popup__title">Фильтры</h3>
+      <div class="filter-popup__row">
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Сыр:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-1" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-1">Сыр пармезан</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-2" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-2">Сыр чеддер</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-3" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-3">Сыр гарганзола</label>
               </div>
           </div>
-
-            <div class="filters__block--wrapper">
-              <p class="filters__subtitle">Овощи</p>
-              <div class="filters__block-ingr">
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-11" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-11">Помидоры черри</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-12" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-12">Шампиньоны</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-13" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-13">Ананасы</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-14" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-14">Халапеньо</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-15" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-15">Маринованные огурцы</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-16" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-16">Груша</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-17" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-17">Айсберг</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-18" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-18">Лук красный</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-19" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-19">Болгарский перец</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-20" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-20">Вешенки</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-21" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-21">Маслины</label></input>
-                <input type="checkbox" name="pizza-btn" id="pizza-btn-22" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-22">Чеснок</label></input>
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Мясо:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-4" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-4">Пепперони</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-5" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-5">Ветчина</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-6" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-6">Цыплёнок</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-7" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-7">Мидии</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-8" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-8">Бекон</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-9" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-9">Чоризо</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-10" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-10">Лосось</label>
               </div>
-            </div>
-          <div class="filters__block--wrapper">
-              <p class="filters__subtitle">Бакалея</p>
-            <div class="filters__block-ingr">
-              <input type="checkbox" name="pizza-btn" id="pizza-btn-23" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-23">Мёд</label></input>
-              <input type="checkbox" name="pizza-btn" id="pizza-btn-24" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-24">Грецкий орех</label></input>
-              <input type="checkbox" name="pizza-btn" id="pizza-btn-25" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-25">Яйцо куриное</label></input>
-            </div>
           </div>
-
-          <div class="filters__block--wrapper">
-            <p class="filters__subtitle">Соусы</p>
-            <div class="filters__block-ingr">
-              <input type="checkbox" name="pizza-btn" id="pizza-btn-26" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-26">Соус барбекью</label></input>
-              <input type="checkbox" name="pizza-btn" id="pizza-btn-27" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-27">Соус песто</label></input>
-              <input type="checkbox" name="pizza-btn" id="pizza-btn-28" class="filters__checkbox" value=""><label class="filters__block-ingr-btn" for="pizza-btn-28">Соус унаги</label></input>
-            </div>
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Овощи:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-11" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-11">Томаты черри</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-12" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-12">Шампиньоны</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-13" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-13">Ананасы</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-14" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-14">Халапеньо</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-15" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-15">Маринованные огурцы</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-16" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-16">Груша</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-17" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-17">Айсберг</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-18" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-18">Красный лук</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-19" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-19">Болгарский перец</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-20" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-20">Вешенки</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-21" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-21">Маслины</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-22" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-22">Чеснок</label>
+              </div>
           </div>
-        
-        </div>
-          <div class="filters__btns-group">
-            <button class="filters__btn--orange filters__btn">Сбросить </button>
-            <button class="filters__btn">Применить</button>
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Бакалея:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-23" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-23">Мёд</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-24" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-24">Грецкий орех</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-25" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-25">Яйцо</label>
+              </div>
           </div>
-        
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Соусы:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-26" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-26">Соус барбекю</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-27" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-27">Соус песто</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="pizza-btn" id="pizza-btn-28" value="" />
+                  <label class="filter-popup__label" for="pizza-btn-28">Соус унаги</label>
+              </div>
+          </div>
       </div>
-    </div>
+      <div class="filter-popup__buttons">
+          <button class="filter-popup__button filter-popup__reset-button filter-popup__pizza-reset-button">
+              Сбросить
+          </button>
+          <button class="filter-popup__button filter-popup__apply-button filter-popup__pizza-apply-button">
+              Применить
+          </button>
+      </div>
+  </div>
+  <div class="filter-popup rolls-filter-popup">
+      <button class="filter-popup__off-btn close-btn">
+          <svg class="filter-popup__off-svg">
+              <use xlink:href="#off-svg"></use>
+          </svg>
+      </button>
+      <h3 class="filter-popup__title">Фильтры</h3>
+      <div class="filter-popup__row">
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Сыр:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-1" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-1">Сыр филадельфия</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-2" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-2">Сыр гауда</label>
+              </div>
+          </div>
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Морепродукты:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-3" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-3">Лосось</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-4" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-4">Креветки</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-5" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-5">Угорь</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-6" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-6">Снежный краб</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-7" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-7">Икра масаго</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-8" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-8">Мидии</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-9" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-9">Стружка тунца</label>
+              </div>
+          </div>
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Соусы:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-10" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-10">Соус унаги</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-11" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-11">Соус спайс</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-12" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-12">Соус сырный</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-13" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-13">Соус розовый</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-14" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-14">Соус гриль</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-15" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-15">Соус запечённый</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-16" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-16">Майонез</label>
+              </div>
+          </div>
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Овощи и фрукты:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-17" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-17">Огурец</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-18" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-18">Авокадо</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-19" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-19">Айсберг</label>
+              </div>
+          </div>
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Мясо:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-20" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-20">Курица</label>
+              </div>
+          </div>
+          <div class="filter-popup__item">
+              <p class="filter-popup__subtitle">Другое:</p>
+              <div class="filter-popup__menu">
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-21" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-21">Кунжут</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-22" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-22">Яичный блинчик</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-23" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-23">Сахар</label>
+                  <input class="filter-popup__checkbox" type="checkbox" name="sushi-btn" id="sushi-btn-24" value="" />
+                  <label class="filter-popup__label" for="sushi-btn-24">Панировка</label>
+              </div>
+          </div>
+      </div>
+      <div class="filter-popup__buttons">
+          <button class="filter-popup__button filter-popup__reset-button filter-popup__roll-reset-button">
+              Сбросить
+          </button>
+          <button class="filter-popup__button filter-popup__apply-button filter-popup__roll-apply-button">
+              Применить
+          </button>
+      </div>
+  </div>
+  
     <script type="module" src="./index.js"></script>
   </body>
 </html>
