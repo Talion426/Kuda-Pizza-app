@@ -1,0 +1,319 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Thin.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-ThinItalic.otf);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Ultralight.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-UltralightItalic.otf);
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Light.otf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-LightItalic.otf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-RegularItalic.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-MediumItalic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Semibold.otf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-SemiboldItalic.otf);
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-BoldItalic.otf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Heavy.otf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-HeavyItalic.otf);
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-Black.otf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(../fonts/SF-Pro-Display-BlackItalic.otf);
+  font-weight: 900;
+  font-style: italic;
+}
+.filter-popup {
+  background: #ffffff;
+  max-width: 520px;
+  height: 100vh;
+  padding: 32px 20px 12px;
+  position: fixed;
+  z-index: 101;
+  right: 0;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate(100%, 0);
+  transition: all 0.5s ease-in-out;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .filter-popup {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    max-height: 80vh;
+    max-width: none;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+}
+.filter-popup__title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #191919;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 767px) {
+  .filter-popup__title {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 16px 0;
+  }
+}
+.filter-popup__row {
+  flex: 1 0 60vh;
+  overflow: auto;
+}
+.filter-popup__item {
+  margin: 0 0 24px 0;
+}
+@media (max-width: 767px) {
+  .filter-popup__item {
+    margin: 0 0 18px 0;
+  }
+}
+.filter-popup__subtitle {
+  font-size: 16px;
+  line-height: 22px;
+  color: #a5a5a5;
+  margin: 0 0 12px 0;
+}
+@media (max-width: 767px) {
+  .filter-popup__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 10px 0;
+  }
+}
+.filter-popup__menu {
+  max-width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.filter-popup__label {
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  color: #191919;
+  padding: 11px 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+.filter-popup__label:hover {
+  transform: scale(95%);
+}
+@media (max-width: 767px) {
+  .filter-popup__label {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 9px 12px;
+  }
+}
+.filter-popup__label._active {
+  background: #ff7010;
+  border: 1px solid #ff7010;
+  color: #ffffff;
+}
+.filter-popup__checkbox {
+  display: none;
+}
+.filter-popup__buttons {
+  border-top: 1px solid #f0f0f0;
+  padding: 12px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.filter-popup__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 13px 10px;
+  width: 50%;
+  border-radius: 6px;
+  border: 1px solid #ff7010;
+  transition: all 0.2s ease-in-out;
+}
+.filter-popup__button:active {
+  transform: scale(95%);
+}
+@media (max-width: 767px) {
+  .filter-popup__button {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.filter-popup__reset-button {
+  background: #ffffff;
+  color: #ff7010;
+}
+.filter-popup__apply-button {
+  background: #ff7010;
+  color: #ffffff;
+}
+.filter-popup__apply-button:hover {
+  background: #ffffff;
+  color: #ff7010;
+}
+.filter-popup__off-btn {
+  position: absolute;
+  top: 40px;
+  left: calc(100% - 50px);
+  background: none;
+}
+.filter-popup__off-svg {
+  width: 24px;
+  height: 24px;
+  fill: #a5a5a5;
+  transition: all 0.2s ease-in-out;
+}
+.filter-popup__off-svg:hover {
+  transform: scale(115%);
+}
+@media (max-width: 767px) {
+  .filter-popup__off-svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.filter-popup._active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transform: translate(0, 0);
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: "SF Pro Text";
+  background: #f9f9f9;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1290px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=index.css.map */
