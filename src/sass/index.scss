@@ -2,6 +2,8 @@
 @import './fonts';
 
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import './basket-popup';
+@import './item-popup';
 
 body {
   display: flex;
@@ -16,4 +18,11 @@ body {
   max-width: 1290px;
   padding: 0 15px;
   margin: 0 auto;
+
+    
+}
+
+p{
+  margin: 0;
+  padding: 0;
 }
