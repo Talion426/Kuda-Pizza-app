@@ -1,0 +1,47 @@
+.slick{
+
+    &-slider{
+
+    }
+
+    &-list{
+        overflow: hidden;
+    }
+
+    &-track{
+        display: flex;
+    }
+
+    &-slide{
+        
+    }
+}
+
+.basket__add-slider .slick-arrow{
+    position: absolute;
+    top: 55%;
+}
+
+.slick-arrow{
+font-size: 0;
+width: 40px;
+height: 40px;
+background: #FF7010;
+border-radius: 41px;
+border: none;
+z-index: 20;
+
+@include mediaMobile{
+    display: none;
+}
+}
+
+.slick-next{
+right: -40px;
+background: url('../images/addToOrder/but-slider-next.png') 0 0 / 100% no-repeat;
+}
+
+.slick-prev{
+left: -40px;
+background: url('../images/addToOrder/button-slider.png') 0 0 / 100% no-repeat;
+}
