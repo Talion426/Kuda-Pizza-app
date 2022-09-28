@@ -223,12 +223,10 @@ btnCloseFilterPizza.addEventListener('click', closeFilterPizza);
 
 
 let buttonFilterRoll = document.querySelector ('.products__rolls-filter');
-
 function activeRoll() {
     let fiterRoll = document.querySelector ('.filter-popup');
     fiterRoll.classList.add('_active');
 }
-
 function closeFilterRoll() {
 let fiterRoll = document.querySelector('.filter-popup._active');
 fiterRoll.classList.remove('_active');
