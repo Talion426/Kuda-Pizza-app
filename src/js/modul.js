@@ -9,8 +9,7 @@ doughLabels.forEach((label) => {
         removeActiveLabel(doughLabels);
         label.classList.add("_active");
     });
-}); 
-
+});
 let sizeLabels = document.querySelectorAll(".item-popup__size-label");
 
 sizeLabels[0].classList.add("_active");
