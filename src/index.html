@@ -904,71 +904,140 @@
             <!-- <a href="/order.html" class="basket-popup__button">Оформить заказ</a> -->
         </div>
     </div>
+  
     <div class="item-popup">
-        <button class="item-popup__off-btn close-btn">
-            <svg class="item-popup__off-svg">
-                <use xlink:href="#off-svg"></use>
-            </svg>
-        </button>
-        <div class="item-popup__img--container">
-            <img src="./images/pizzas/pizza10.png" alt="" class="item-popup__img" />
-        </div>
-        <div class="item-popup__descr">
-            <p class="item-popup__title"></p>
-            <p class="item-popup__ingridients"></p>
-            <div class="item-popup__control-block">
-                <div class="item-popup__type">
-                    <input class="item-popup__radio" type="radio" name="dough-btn" id="dough-btn-1" value="" checked />
-                    <label class="item-popup__label item-popup__dough-label" for="dough-btn-1">Традиционное</label>
-                    <input class="item-popup__radio" type="radio" name="dough-btn" id="dough-btn-2" value="" />
-                    <label class="item-popup__label item-popup__dough-label" for="dough-btn-2">Тонкое</label>
-                    <div class="item-popup__background item-popup__dough-background"></div>
-                </div>
-                <div class="item-popup__type">
-                    <input class="item-popup__radio" type="radio" name="size-btn" id="size-btn-1" value="" checked />
-                    <label class="item-popup__label item-popup__size-label" for="size-btn-1">20 см</label>
-                    <input class="item-popup__radio" type="radio" name="size-btn" id="size-btn-2" value="" />
-                    <label class="item-popup__label item-popup__size-label" for="size-btn-2">25 см</label>
-                    <input class="item-popup__radio" type="radio" name="size-btn" id="size-btn-3" value="" />
-                    <label class="item-popup__label item-popup__size-label" for="size-btn-3">30 см</label>
-                    <div class="item-popup__background item-popup__size-background"></div>
-                </div>
-                <p class="item-popup__subtitle">Добавьте в пиццу:</p>
-                <ul class="item-popup__list">
-                    <li class="item-popup__item">
-                        <input class="item-popup__checkbox" type="checkbox" name="ingr-btn" id="ingr-btn-1" value="" />
-                        <label class="item-popup__add-label" for="ingr-btn-1">
-                            <svg class="item-popup__cheese-svg">
-                                <use xlink:href="#cheese-svg"></use>
-                            </svg>
-                        </label>
-                        <svg class="item-popup__checked-svg">
-                            <use xlink:href="#checked-svg"></use>
-                        </svg>
-                        <p class="item-popup__name">Сырный борт</p>
-                        <p class="item-popup__price">139 ₽</p>
-                    </li>
-                    <li class="item-popup__item">
-                        <input class="item-popup__checkbox" type="checkbox" name="ingr-btn" id="ingr-btn-2" value="" />
-                        <label class="item-popup__add-label" for="ingr-btn-2">
-                            <svg class="item-popup__garlic-svg">
-                                <use xlink:href="#garlic-svg"></use>
-                            </svg>
-                        </label>
-                        <svg class="item-popup__checked-svg">
-                            <use xlink:href="#checked-svg"></use>
-                        </svg>
-                        <p class="item-popup__name">Чесночный борт</p>
-                        <p class="item-popup__price">49 ₽</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="item-popup__confirm-block">
-                <p class="item-popup__full-price"></p>
-                <button class="item-popup__button">Добавить</button>
-            </div>
-        </div>
-    </div>
+      <button class="item-popup__off-btn close-btn">
+          <svg class="item-popup__off-svg">
+              <use xlink:href="#off-svg"></use>
+          </svg>
+      </button>
+      <div class="item-popup__img--container">
+       <!--    <img src="" alt="" class="item-popup__img" /> -->
+      </div>
+      <div class="item-popup__descr">
+          <svg class="item-popup__title-svg item-popup__pizza-title-svg">
+              <use xlink:href="#pizzas-svg"></use>
+          </svg>
+          <svg class="item-popup__title-svg item-popup__roll-title-svg">
+              <use xlink:href="#rolls-svg"></use>
+          </svg>
+          <svg class="item-popup__title-svg item-popup__sushi-title-svg">
+              <use xlink:href="#sushies-svg"></use>
+          </svg>
+          <svg class="item-popup__title-svg item-popup__set-title-svg">
+              <use xlink:href="#sets-svg"></use>
+          </svg>
+          <svg class="item-popup__title-svg item-popup__sallad-title-svg">
+              <use xlink:href="#salads-svg"></use>
+          </svg>
+          <svg class="item-popup__title-svg item-popup__snack-title-svg">
+              <use xlink:href="#snacks-svg"></use>
+          </svg>
+          <svg class="item-popup__title-svg item-popup__dessert-title-svg">
+              <use xlink:href="#desserts-svg"></use>
+          </svg>
+          <svg class="item-popup__title-svg item-popup__sauce-title-svg">
+              <use xlink:href="#sauses-svg"></use>
+          </svg>
+          <svg class="item-popup__title-svg item-popup__drinkable-title-svg">
+              <use xlink:href="#drinks-svg"></use>
+          </svg>
+          <p class="item-popup__title"></p>
+          <p class="item-popup__ingridients"></p>
+          <div class="item-popup__control-block">
+              <div class="item-popup__type item-popup__roll-type">
+                  <input
+                      class="item-popup__radio"
+                      type="radio"
+                      name="roll-btn"
+                      id="roll-btn-1"
+                      value=""
+                      checked
+                  />
+                  <label class="item-popup__label item-popup__roll-label" for="roll-btn-1">6 шт</label>
+                  <input class="item-popup__radio" type="radio" name="roll-btn" id="roll-btn-2" value="" />
+                  <label class="item-popup__label item-popup__roll-label" for="roll-btn-2">8 шт</label>
+                  <div class="item-popup__background item-popup__roll-background"></div>
+              </div>
+              <div class="item-popup__type item-popup__dough-type">
+                  <input
+                      class="item-popup__radio"
+                      type="radio"
+                      name="dough-btn"
+                      id="dough-btn-1"
+                      value=""
+                      checked
+                  />
+                  <label class="item-popup__label item-popup__dough-label" for="dough-btn-1">Традиционное</label>
+                  <input class="item-popup__radio" type="radio" name="dough-btn" id="dough-btn-2" value="" />
+                  <label class="item-popup__label item-popup__dough-label" for="dough-btn-2">Тонкое</label>
+                  <div class="item-popup__background item-popup__dough-background"></div>
+              </div>
+              <div class="item-popup__type item-popup__size-type">
+                  <input
+                      class="item-popup__radio"
+                      type="radio"
+                      name="size-btn"
+                      id="size-btn-1"
+                      checked
+                  />
+                  <label class="item-popup__label item-popup__size-label" for="size-btn-1">20 см</label>
+                  <input class="item-popup__radio" type="radio" name="size-btn" id="size-btn-2" value="" />
+                  <label class="item-popup__label item-popup__size-label" for="size-btn-2">25 см</label>
+                  <input class="item-popup__radio" type="radio" name="size-btn" id="size-btn-3" value="" />
+                  <label class="item-popup__label item-popup__size-label" for="size-btn-3">30 см</label>
+                  <div class="item-popup__background item-popup__size-background"></div>
+              </div>
+              <div class="item-popup__add-block">
+                  <p class="item-popup__subtitle">Добавьте в пиццу:</p>
+                  <ul class="item-popup__list">
+                      <li class="item-popup__item">
+                          <input
+                              class="item-popup__checkbox"
+                              type="checkbox"
+                              name="ingr-btn"
+                              id="ingr-btn-1"
+                              value=""
+                          />
+                          <label class="item-popup__add-label " for="ingr-btn-1">
+                              <svg class="item-popup__cheese-svg">
+                                  <use xlink:href="#cheese-svg"></use>
+                              </svg>
+                          </label>
+                          <svg class="item-popup__checked-svg">
+                              <use xlink:href="#checked-svg"></use>
+                          </svg>
+                          <p class="item-popup__name">Сырный борт</p>
+                          <p class="item-popup__price">139 ₽</p>
+                      </li>
+                      <li class="item-popup__item">
+                          <input
+                              class="item-popup__checkbox"
+                              type="checkbox"
+                              name="ingr-btn"
+                              id="ingr-btn-2"
+                              value=""
+                          />
+                          <label class="item-popup__add-label " for="ingr-btn-2">
+                              <svg class="item-popup__garlic-svg">
+                                  <use xlink:href="#garlic-svg"></use>
+                              </svg>
+                          </label>
+                          <svg class="item-popup__checked-svg">
+                              <use xlink:href="#checked-svg"></use>
+                          </svg>
+                          <p class="item-popup__name">Чесночный борт</p>
+                          <p class="item-popup__price">49 ₽</p>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="item-popup__confirm-block">
+              <p class="item-popup__full-price"></p>
+              <button class="item-popup__button">Добавить</button>
+          </div>
+      </div>
+  </div>
 
     <script
       src="https://kit.fontawesome.com/c6a31e549f.js"
@@ -976,6 +1045,7 @@
     ></script>
     <script type="module" src="./js/objects.js"></script>
     <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/modul.js"></script>
   </body>
 </html>
 <!-- npm run dev -->
